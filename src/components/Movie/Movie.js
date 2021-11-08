@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import "./Movie.css"
+import { Link } from "react-router-dom";
 
 
 import ReactStars from 'react-rating-stars-component'
@@ -8,12 +9,14 @@ import ReactStars from 'react-rating-stars-component'
 
 
 const Movie = ({
-movie: { title, posterurl, description,rating},
+movie: { id, title, posterurl, description,rating},
 
  
 }) => {
   return (
     <div>
+          <Link to={`/moviedetails/${id}`}>
+
       <Card style={{ width: "18rem", margin: "40px" }}>
         <Card.Img variant="top" src={posterurl} />
         <Card.Body>
@@ -29,12 +32,12 @@ movie: { title, posterurl, description,rating},
     edit={false}
   
   />
- 
-       
-       
+    
        
         </Card.Body>
       </Card>
+      </Link>
+
     </div>
   );
 };

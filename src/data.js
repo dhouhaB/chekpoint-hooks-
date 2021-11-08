@@ -1,6 +1,6 @@
 export const data = [
     {
-      id: 1,
+      id: Math.random(),
       title: "Sweet girl",
   posterurl:"https://image.tmdb.org/t/p/w185/j75D1IZypHIdMezTw29RDMiTf2g.jpg"
        ,
@@ -8,7 +8,7 @@ export const data = [
   rating:1,
     },
     {
-        id: 2,
+      id: Math.random(),
         title: "You",
     posterurl:"https://www.ecranlarge.com/media/cache/1600x1200/uploads/image/001/051/parfaite-affiche-francaise-1051920.jpg"
          ,
@@ -16,7 +16,7 @@ export const data = [
     rating:2
       },
       {
-        id: 3,
+        id: Math.random(),
         title: "The trip",
     posterurl:"https://fr.web.img4.acsta.net/pictures/21/09/30/13/59/4479003.jpg"
          ,
